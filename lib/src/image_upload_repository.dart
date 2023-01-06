@@ -56,6 +56,22 @@ class ImageUploadRepository {
     }
   }
 
+  // Future<String> uploadAsset(String assetName) async {
+  //   final byteData = await rootBundle.load(assetName);
+  //   final result = await _uploadAsset(byteData, assetName);
+  //   // TODO: write to firestore etc
+  // }
+
+  // UploadTask _uploadAsset(ByteData byteData, String filename) {
+  //   final bytes = byteData.buffer
+  //       .asUint8List(byteData.offsetInBytes, byteData.lengthInBytes);
+  //   final ref = storage.ref('photos/$filename');
+  //   return ref.putData(
+  //     bytes,
+  //     SettableMetadata(contentType: 'image/jpeg'),
+  //   );
+  // }
+
   Future<void> deletePhoto(String photoId) async {
     // delete both image in Storage and data in Firestore
     await storage.ref('photos/$photoId').delete();

@@ -7,6 +7,6 @@ A sample demo app showing how to:
 
 ### Preview
 
-![Image upload demo](/.github/images/screenshot.png)
+<img src="/.github/images/screenshot.png" alt="Image upload demo" width="350"/>
 
 ### [LICENSE: MIT](LICENSE.md)

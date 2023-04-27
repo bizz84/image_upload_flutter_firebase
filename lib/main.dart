@@ -77,7 +77,7 @@ class ImagesGrid extends ConsumerWidget {
         if (snapshot.docs.isEmpty) {
           return Center(
               child: Text('No Data',
-                  style: Theme.of(context).textTheme.headline5));
+                  style: Theme.of(context).textTheme.headlineSmall));
         }
         return ListView.builder(
           itemCount: snapshot.docs.length,
@@ -134,7 +134,7 @@ class PhotoTile extends StatelessWidget {
                 if (photo.createdAt != null) ...[
                   const SizedBox(height: 8),
                   Text(photo.createdAt.toString(),
-                      style: Theme.of(context).textTheme.caption),
+                      style: Theme.of(context).textTheme.bodySmall),
                 ],
               ],
             ),

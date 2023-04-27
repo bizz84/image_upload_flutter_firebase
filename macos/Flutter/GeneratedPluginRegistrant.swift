@@ -8,7 +8,7 @@ import Foundation
 import cloud_firestore
 import firebase_core
 import firebase_storage
-import path_provider_macos
+import path_provider_foundation
 import sqflite
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
